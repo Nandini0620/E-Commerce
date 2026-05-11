@@ -5,9 +5,10 @@ import java.time.LocalDateTime;
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserTest {
-
+    
     @Test
-    void testUserSettersAndGetters() {
+    void testUserSettersAndGetters() 
+    {
         User user = new User();
         user.setName("Nandini");
         user.setEmail("nandini@gmail.com");
@@ -21,14 +22,16 @@ class UserTest {
     }
 
     @Test
-    void testUserId() {
+    void testUserId() 
+    {
         User user = new User();
         user.setId(1L);
         assertEquals(1L, user.getId());
     }
 
     @Test
-    void testCreatedAt() {
+    void testCreatedAt() 
+    {
         User user = new User();
         LocalDateTime now = LocalDateTime.now();
         user.setCreatedAt(now);
@@ -36,7 +39,8 @@ class UserTest {
     }
 
     @Test
-    void testDefaultConstructor() {
+    void testDefaultConstructor() 
+    {
         User user = new User();
         assertNotNull(user);
     }
